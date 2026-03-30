@@ -37,8 +37,8 @@
             <h2>Register</h2>
             <form id="signupForm">
                 <div class="form-group"><label>Full Name</label><input type="text" id="s-name" required></div>
-                <div class="form-group"><label>Email</label><input type="email" id="s-email" required></div>
-                <div class="form-group"><label>Password</label><input type="password" id="s-pass" required minlength="6"></div>
+                <div class="form-group"><label>Email</label><input type="email" id="s-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></div>
+                <div class="form-group"><label>Password</label><input type="password" id="s-pass" required minlength="6" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[\$_]).+"></div>
                 <div class="form-group"><label>Confirm Password</label><input type="password" id="s-confirm" required></div>
                 <div class="form-group"><label>Date of Birth</label><input type="date" id="s-dob" required></div>
                 <div class="form-group"><label>Major</label><input type="text" id="s-major" required></div>
